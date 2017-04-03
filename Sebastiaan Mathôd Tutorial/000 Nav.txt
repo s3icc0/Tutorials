@@ -1,0 +1,24 @@
+7 Simple Tricks to Write Better Python Code
+https://www.youtube.com/watch?v=VBokjWj_cEA
+
+    001 Enumerate.py
+    002 Zip.py
+    003 Swap values.py
+    004 Dict get.py
+    005 Search in list.py
+    006 With - file manipulation.py
+    007 Try Except.py
+
+7 More Tricks to Write Better Python Code
+https://www.youtube.com/watch?v=SNTZpy0oDB8
+
+    008
+
+Using lists effectively in Python
+https://www.youtube.com/watch?v=S55yOHvUyGk&index=6&list=PLR-r0edywujd8D-R2Kue1C_wYEK_4Ii71
+
+List slicing and list comprehensions
+https://www.youtube.com/watch?v=HobjHIpLhZk&index=3&t=478s&list=PLR-r0edywujd8D-R2Kue1C_wYEK_4Ii71
+
+Beyond PEP 8
+https://www.youtube.com/watch?v=wf-BqAjZb8M&index=9&list=PLR-r0edywujd8D-R2Kue1C_wYEK_4Ii71

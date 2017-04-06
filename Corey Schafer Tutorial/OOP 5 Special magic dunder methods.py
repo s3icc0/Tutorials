@@ -48,6 +48,19 @@ class Employee:
             return False
         return True
 
+    def __repr__(self):
+        return "Employee('{}', '{}', '{}')"\
+            .format(self.first, self.last, self.pay)
+
+    def __str__(self):
+        return '{} - {}'\
+            .format(self.fullname(), self.email)
+
+    def __add__(self, other):
+        return self.pay + other.pay
+
+    def __len__(self):
+        return len(self.fullname())
 
 # Inherited from Employee
 class Developer(Employee):
@@ -84,35 +97,29 @@ class Manager(Employee):
         print()
 
 
-dev_1 = Developer('Ondrej', 'Sisler', 50000, 'Python')
-dev_2 = Developer('Test', 'User', 10000, 'Java')
-mgr_1 = Manager('Sue', 'Smith', 90000, [dev_1])
+emp_1 = Employee('Ondrej', 'Sisler', 50000)
+emp_2 = Employee('Test', 'User', 10000)
 
-print(dev_1.email)
-print(dev_1.prog_lang)
+print(emp_1)
+print()
+print(repr(emp_1))
+print(str(emp_1))
+print()
+print(emp_1.__repr__())
+print(emp_1.__str__())
+print()
 
-print(mgr_1.email)
+print(1 + 2)
+print(int.__add__(1, 2))
+print('a' + 'b')
+print(str.__add__('a', 'b'))
+print()
 
-mgr_1.print_emps()
+print(emp_1 + emp_2)
+print()
 
-mgr_1.add_emp(dev_2)
+print(len('test'))
+print('test'.__len__())
+print()
 
-mgr_1.print_emps()
-
-mgr_1.remove_emp(dev_1)
-
-mgr_1.print_emps()
-
-# print(dev_1.pay)
-# dev_1.apply_raise()
-# print(dev_1.pay)
-
-
-# help function to analyze the function
-# print(help(Developer))
-
-# my_date = datetime.date(2017, 7, 10)
-# print(Employee.is_workday(my_date))
-
-print(isinstance(mgr_1, Developer))
-print(issubclass(Manager, Developer))
+print(len(emp_1))
